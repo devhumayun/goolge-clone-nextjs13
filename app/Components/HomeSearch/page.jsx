@@ -15,7 +15,7 @@ export default function HomeSearchBar() {
      
       if(!input.trim())return
 
-      router.push(`search?q=${input}`)
+      router.push(`/search/web?q=${input}`)
     }
 
     // felling lucky // Random search
@@ -24,7 +24,7 @@ export default function HomeSearchBar() {
       const response = await fetch(`https://random-word-api.herokuapp.com/word`).then((res) => res.json()).then((data) => data[0])
 
       if(!response) return
-      router.push(`search?q=${response}`)
+      router.push(`/search?q=${response}`)
       setLoadingRandomSearch(false)
     }
   return (
