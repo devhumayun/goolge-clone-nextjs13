@@ -1,6 +1,6 @@
 import Image from "next/image";
 import HomeHeader from "./Components/HomeHeader/page";
-import HomeSearchBar from "./Components/HomeSearch/page";
+import HomeSearchBar from "./Components/HomeSearch/HomeSearchBar";
 
 export default function Home() {
   return (
